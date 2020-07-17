@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/bottomSheetContainer"
+    android:background="@drawable/bottom_sheet_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    android:text="Product"
+    android:gravity="center"
+    android:padding="15dp"
+    android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ECECEC"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <include android:id="@+id/shimmerMeal"
+            layout="@layout/favourite_recycler_items" />
+    </LinearLayout>
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/decrement"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_minus"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/productNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="1 "
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"/>
+    <ImageView
+        android:id="@+id/increament"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_add"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>
+</LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#E7390E"
+        app:layout_constraintBottom_toBottomOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent" >
+        <TextView
+            android:id="@+id/OrderBottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Ordder"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

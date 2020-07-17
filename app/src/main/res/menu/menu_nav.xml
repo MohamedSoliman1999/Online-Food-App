@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home2"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:cnb_iconColor="@color/home"/>
+    <item
+        android:id="@+id/favourite2"
+        android:icon="@drawable/ic_heart"
+        android:title="Favorites"
+        app:cnb_iconColor="@color/favorites" />
+
+
+    <item
+        android:id="@+id/account2"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Account"
+        app:cnb_iconColor="#FF785B" />
+    <item
+        android:id="@+id/RecommendItem"
+        android:icon="@drawable/ic_medal"
+        android:title="Recommend"
+        app:cnb_iconColor="#FFC107" />
+    <item
+        android:id="@+id/card2"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Cart"
+        app:cnb_iconColor="@color/colorAccent" />
+
+</menu>
